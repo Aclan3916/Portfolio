@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 import IntroAnimation from "./Components/IntroAnimation";
-import Header from "./Components/Header";
+import Navigation from "./Components/Navigation";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 import Background from "./Components/Background";
-
+import Home from "./Components/Home";
+import Recommendations from "./Components/Recommendations";
+import AboutMe from "./Components/AboutMe";
 const App = () => {
   const [showContent, setShowContent] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -37,17 +40,33 @@ const App = () => {
   };
 
   return (
-    <div className="app">
-        <Background />
-      {!showContent && <IntroAnimation onComplete={() => setShowContent(true)} />}
-      <div className={`main-content ${showContent ? 'visible' : 'hidden'}`}>
-        <Header className="section" id="header" activeSection={activeSection} onNavClick={handleNavClick} />
-        <About className="section" id="about" />
-        <Projects className="section" id="projects" />
-        <Contact className="section" id="contact" />
-        <Footer className="section" id="footer" />
-      </div>
+    <Router>
+            {!showContent && <IntroAnimation onComplete={() => setShowContent(true)} />}
+            <div className={`main-content ${showContent ? 'visible' : 'hidden'}`}>
+      <Background />
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutMe />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/recommendations" element={<Recommendations />} />
+      </Routes>
+      <Footer className="section" id="footer" />
     </div>
+    </Router>
+
+    // {/* // <div className="app">
+    // //     <Background />
+    // //   {!showContent && <IntroAnimation onComplete={() => setShowContent(true)} />}
+    // //   <div className={`main-content ${showContent ? 'visible' : 'hidden'}`}>
+    // //     <Header className="section" id="header" activeSection={activeSection} onNavClick={handleNavClick} />
+    // //     <About />
+    // //     <Projects  />
+    // //     <Contact  />
+    // //     <Footer className="section" id="footer" />
+    // //   </div>
+    // // </div> */}
   );
 };
 
