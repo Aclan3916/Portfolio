@@ -11,6 +11,7 @@ import {
 import { motion } from 'framer-motion';
 import { keyframes } from "@emotion/react"
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 // Blinking cursor animation
 const blink = keyframes`
@@ -85,8 +86,8 @@ const Home = () => {
 
           <HStack spacing={4} pt={8}>
             <Button
-              as="a"
-              href="#projects"
+              as={Link}
+              to="/projects"
               size="lg"
               bg="#646cff"
               color="white"

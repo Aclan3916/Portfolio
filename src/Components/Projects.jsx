@@ -115,6 +115,8 @@ const Projects = () => {
                     <Link 
                       href={project.demoLink}
                       isExternal
+                      target="_blank"
+                      rel="noopener noreferrer"
                       display="flex"
                       alignItems="center"
                       gap={2}
@@ -128,6 +130,8 @@ const Projects = () => {
                     <Link 
                       href={project.githubLink}
                       isExternal
+                      target="_blank"
+                      rel="noopener noreferrer"
                       display="flex"
                       alignItems="center"
                       gap={2}
@@ -142,6 +146,16 @@ const Projects = () => {
             </Box>
           ))}
         </Grid>
+        
+        <Text
+          textAlign="center"
+          fontSize="lg"
+          color="whiteAlpha.800"
+          mt={16}
+          fontStyle="italic"
+        >
+          More exciting projects coming soon... Stay tuned!
+        </Text>
       </Container>
     </Box>
   );
