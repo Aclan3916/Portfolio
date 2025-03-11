@@ -31,22 +31,29 @@ const AboutMe = () => {
     "Project Management",
     "Mentoring",
     "Time Management",
-    "Adaptability"
+    "Adaptability", 
+    "Hardworking",
   ];
 
   const techSkills = [
     "JavaScript",
     "React",
-    "Node.js",
+    ".NET Framework",
     "TypeScript",
     "C#",
     "SQL",
     "Git",
     "REST APIs",
     "HTML/CSS",
-    "AWS",
-    "Docker",
-    "MongoDB"
+    "Azure",
+    "Crystal Reports",
+    "PL/SQL",
+    "WCF Services",
+    "Blazor + Razor Pages",
+    "Bootstrap",
+    "Chakra UI",
+    "Entity Framework",
+    "Supabase",
   ];
 
   return (
