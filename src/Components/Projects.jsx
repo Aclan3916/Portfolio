@@ -30,8 +30,8 @@ const Projects = () => {
       image: RunningLog,
       description: "This is a basic application demonstrating CRUD functionality using React with Vite and Chakra UI, integrated with a Supabase database for creating, viewing, editing, and deleting run entries.",
       technologies: ["React", "Supabase", "Vite", "Chakra UI"],
-      demoLink: "https://your-demo-link.com",
-      githubLink: "https://github.com/Aclan3916/RunningLog"
+      demoLink: "https://aclan3916.github.io/react-running-log/",
+      githubLink: "https://github.com/Aclan3916/react-running-log/tree/main"
     }
   ];
 
