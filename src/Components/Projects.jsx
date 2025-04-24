@@ -14,6 +14,7 @@ import {
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import FigmaWedding from "../assets/FigmaWedding.png"
 import RunningLog from "../assets/RunLog.png";
+import AnotherToDoApp from "../assets/AnotherToDoApp.png";
 import TypeWriterHeading from "./TypeWriterHeading";
 
 const Projects = () => {
@@ -24,14 +25,6 @@ const Projects = () => {
       description: "A Figma Prototype for a wedding photography app that allows users to book photographers, view portfolios, and manage their wedding day timeline.",
       technologies: ["Figma"],
       demoLink: "https://www.figma.com/proto/omsZjCecE6lhQfyLYzxNVX/Photography-Page?node-id=3-28&t=PkLKkT9Ffsil1zKl-1",
-    },
-    {
-      title: "Another Todo App",
-      image: RunningLog,
-      description: "This is a simple to-do list app built with modern web technologies like React, Node.js, and Next.js. Users can add, edit, delete, and mark tasks as complete. It uses React for the frontend and Next.js API routes (powered by Node.js) for backend functionality. The app includes basic form validation, responsive UI styling, and user-friendly touches like a motivational quote toggle. It’s a great example of how to build a full-stack app with client-server interaction and clean, component-based design.",
-      technologies: ["React", "Node.js", "Next.js", "Tailwind CSS"],
-      demoLink: "https://another-to-do-app.vercel.app/",
-      githubLink: "https://github.com/Aclan3916/Another-to-do-app/tree/main"
     },
     {
       title: "Running Log",
