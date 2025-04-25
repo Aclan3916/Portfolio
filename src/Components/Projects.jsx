@@ -14,7 +14,7 @@ import {
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import FigmaWedding from "../assets/FigmaWedding.png"
 import RunningLog from "../assets/RunLog.png";
-import AnotherToDoApp from "../assets/AnotherToDoApp.png";
+import AnotherToDoApp from "../assets/AnotherToDoAppImage.png";
 import TypeWriterHeading from "./TypeWriterHeading";
 
 const Projects = () => {
