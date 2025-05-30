@@ -16,6 +16,7 @@ import FigmaWedding from "../assets/FigmaWedding.png"
 import RunningLog from "../assets/RunLog.png";
 import AnotherToDoApp from "../assets/AnotherToDoAppImage.png";
 import TypeWriterHeading from "./TypeWriterHeading";
+import ExpenseTracker from '../assets/ExpenseTracker.png'
 
 const Projects = () => {
   const projects = [
@@ -37,10 +38,18 @@ const Projects = () => {
     {
       title: "Running Log",
       image: RunningLog,
-      description: "This is a basic application demonstrating CRUD functionality using React with Vite and Chakra UI, integrated with a Supabase database for creating, viewing, editing, and deleting run entries.",
+      description: "This is a basic application demonstrating CRUD functionality using React with Vite and Chakra UI, integrated with a Supabase database for creating, viewing, editing, and deleting run entries. Just a quick heads-up: I'm using Supabase as the database, and with the free plan, the database can pause if the app isn't accessed for seven days. If you run into any issues loading or saving data, it may simply be because the Supabase instance has temporarily paused.",
       technologies: ["React", "Supabase", "Vite", "Chakra UI"],
       demoLink: "https://aclan3916.github.io/react-running-log/",
       githubLink: "https://github.com/Aclan3916/react-running-log/tree/main"
+    },
+    {
+      title: "Expense Tracker",
+      image: ExpenseTracker,
+      description: "This expense tracker app was built using React with functional components and hooks for state management.",
+      technologies: ["React", "JavaScript","CSS"],
+      demoLink: "https://aclan3916.github.io/ReactExpenseTracker/",
+      githubLink: "https://github.com/Aclan3916/ReactExpenseTracker"
     }
   ];
 
