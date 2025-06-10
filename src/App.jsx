@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './App.css';
 import IntroAnimation from "./Components/IntroAnimation";
 import Navigation from "./Components/Navigation";
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
 import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
