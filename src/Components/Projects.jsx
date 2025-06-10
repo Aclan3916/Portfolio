@@ -17,6 +17,7 @@ import RunningLog from "../assets/RunLog.png";
 import AnotherToDoApp from "../assets/AnotherToDoAppImage.png";
 import TypeWriterHeading from "./TypeWriterHeading";
 import ExpenseTracker from '../assets/ExpenseTracker.png'
+import Arcade from '../assets/Arcade.png'
 
 const Projects = () => {
   const projects = [
@@ -26,6 +27,14 @@ const Projects = () => {
       description: "A Figma Prototype for a wedding photography app that allows users to book photographers, view portfolios, and manage their wedding day timeline.",
       technologies: ["Figma"],
       demoLink: "https://www.figma.com/proto/omsZjCecE6lhQfyLYzxNVX/Photography-Page?node-id=3-28&t=PkLKkT9Ffsil1zKl-1",
+    },
+    {
+      title: "Arcade",
+      image: Arcade,
+      description: "This React Arcade application is a web-based gaming platform built with React, TypeScript, and Vite that features classic games ",
+      technologies: ["React", "TypeScript","Custom CSS", "ChatGPT images", "Vite", "gh-pages"],
+      demoLink: "https://aclan3916.github.io/ReactArcade",
+      githubLink: "https://github.com/Aclan3916/ReactArcade"
     },
     {
       title: "Another Todo App",
