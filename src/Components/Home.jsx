@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Box,
   Container,
@@ -6,12 +6,12 @@ import {
   Text,
   VStack,
   HStack,
-  Button
-} from '@chakra-ui/react';
-import { motion } from 'framer-motion';
-import { keyframes } from "@emotion/react"
-import { FiGithub, FiLinkedin } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+  Button,
+} from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import { keyframes } from "@emotion/react";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 // Blinking cursor animation
 const blink = keyframes`
@@ -23,11 +23,11 @@ const MotionBox = motion(Box);
 
 const Home = () => {
   return (
-    <Box 
-      as="section" 
-      minH="100vh" 
-      display="flex" 
-      alignItems="center" 
+    <Box
+      as="section"
+      minH="100vh"
+      display="flex"
+      alignItems="center"
       position="relative"
       overflow="hidden"
       id="home"
@@ -41,19 +41,14 @@ const Home = () => {
         bottom={0}
         bgGradient="radial-gradient(circle at top right, rgba(100, 108, 255, 0.08), transparent 40%)"
       />
-      
+
       <Container maxW="7xl">
         <VStack align="stretch" spacing={6}>
           <Box>
-            <Text 
-              color="#646cff" 
-              fontSize="xl" 
-              fontFamily="monospace"
-              mb={3}
-            >
+            <Text color="#646cff" fontSize="xl" fontFamily="monospace" mb={3}>
               Hello, World! I'm
             </Text>
-            
+
             <Heading
               as="h1"
               fontSize={{ base: "4xl", md: "6xl", lg: "7xl" }}
@@ -63,8 +58,8 @@ const Home = () => {
               mb={4}
             >
               Audrey E. Clanton
-              <Box 
-                as="span" 
+              <Box
+                as="span"
                 animation={`${blink} 1s step-end infinite`}
                 color="#646cff"
               >
@@ -80,7 +75,8 @@ const Home = () => {
               lineHeight="tall"
               maxW="800px"
             >
-              Full Stack Software Engineer & UX/UI Lead crafting elegant solutions to complex problems
+              Full Stack Software Engineer & UX/UI Lead crafting elegant
+              solutions to complex problems
             </Heading>
           </Box>
 
@@ -99,7 +95,7 @@ const Home = () => {
             >
               View My Work
             </Button>
-            
+
             <HStack spacing={4}>
               <Button
                 as="a"
@@ -117,7 +113,7 @@ const Home = () => {
               >
                 GitHub
               </Button>
-              
+
               <Button
                 as="a"
                 href="https://www.linkedin.com/in/audreyclanton/"
